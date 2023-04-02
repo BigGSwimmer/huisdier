@@ -12,7 +12,9 @@ input.onGesture(Gesture.LogoDown, function () {
         # . . . #
         `)
 })
+// 9de van Beethoven
 input.onButtonPressed(Button.A, function () {
+    basic.showIcon(IconNames.Heart)
     music.playMelody("E E F G G F E D C C D E E D D", 125)
 })
 input.onGesture(Gesture.Shake, function () {
@@ -43,7 +45,9 @@ input.onButtonPressed(Button.AB, function () {
 input.onGesture(Gesture.LogoUp, function () {
     basic.showIcon(IconNames.Happy)
 })
+// big ben musiekje
 input.onButtonPressed(Button.B, function () {
+    basic.showIcon(IconNames.Heart)
     music.playMelody("B G A D - D A B G D - B A G D - D A B G", 120)
 })
 input.onGesture(Gesture.TiltLeft, function () {

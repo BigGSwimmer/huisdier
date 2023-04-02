@@ -1,3 +1,5 @@
+// Verander niet naar blokken!!
+
 input.onGesture(Gesture.ScreenDown, function () {
     basic.showString("OMDRAAIEN")
 })
@@ -11,7 +13,7 @@ input.onGesture(Gesture.LogoDown, function () {
         `)
 })
 input.onButtonPressed(Button.A, function () {
-    music.playMelody("B A G A G F A C5 ", 120)
+    music.playMelody("E E F G G F E D C C D E E D D", 125)
 })
 input.onGesture(Gesture.Shake, function () {
     basic.showIcon(IconNames.Angry)
@@ -21,11 +23,11 @@ input.onGesture(Gesture.ScreenUp, function () {
 })
 input.onGesture(Gesture.TiltRight, function () {
     basic.showLeds(`
-        # . . . .
-        # . . . .
-        # . . . .
-        # . . . .
-        # . . . .
+        . . . . #
+        . . . . #
+        . . . . #
+        . . . . #
+        . . . . #
         `)
 })
 input.onButtonPressed(Button.AB, function () {
@@ -42,15 +44,15 @@ input.onGesture(Gesture.LogoUp, function () {
     basic.showIcon(IconNames.Happy)
 })
 input.onButtonPressed(Button.B, function () {
-    music.playMelody("G F G A - F E D ", 120)
+    music.playMelody("B G A D - D A B G D - B A G D - D A B G", 120)
 })
 input.onGesture(Gesture.TiltLeft, function () {
     basic.showLeds(`
-        . . . . #
-        . . . . #
-        . . . . #
-        . . . . #
-        . . . . #
+        # . . . .
+        # . . . .
+        # . . . .
+        # . . . .
+        # . . . .
         `)
 })
 let voorwerp = 0

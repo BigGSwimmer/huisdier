@@ -1,7 +1,14 @@
-// Verander niet naar blokken!!
-
+/**
+ * Verander niet naar blokken!!
+ */
 input.onGesture(Gesture.ScreenDown, function () {
-    basic.showString("OMDRAAIEN")
+    basic.showLeds(`
+        . . . # .
+        # # # # #
+        # . . # .
+        # . . . .
+        # # # # .
+        `)
 })
 input.onGesture(Gesture.LogoDown, function () {
     basic.showLeds(`
@@ -15,7 +22,7 @@ input.onGesture(Gesture.LogoDown, function () {
 // 9de van Beethoven
 input.onButtonPressed(Button.A, function () {
     basic.showIcon(IconNames.Heart)
-    music.playMelody("E E F G G F E D C C D E E D D", 125)
+    music.playMelody("E E F G G F E D ", 125)
 })
 input.onGesture(Gesture.Shake, function () {
     basic.showIcon(IconNames.Angry)
@@ -48,7 +55,7 @@ input.onGesture(Gesture.LogoUp, function () {
 // big ben musiekje
 input.onButtonPressed(Button.B, function () {
     basic.showIcon(IconNames.Heart)
-    music.playMelody("B G A D - D A B G D - B A G D - D A B G", 120)
+    music.playMelody("B G A D - D A B ", 120)
 })
 input.onGesture(Gesture.TiltLeft, function () {
     basic.showLeds(`
